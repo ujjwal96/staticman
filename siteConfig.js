@@ -178,6 +178,11 @@ const schema = {
     format: Object,
     default: {}
   },
+  staticmanToken: {
+    doc: 'Encrypted token used to approve entry request',
+    format: 'EncryptedString',
+    default: null
+  },
   reCaptcha: {
     enabled: {
       doc: 'Set to `true` to force reCAPTCHA validation, set to `false` to accept comments without reCAPTCHA.',
